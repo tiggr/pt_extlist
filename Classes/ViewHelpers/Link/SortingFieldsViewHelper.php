@@ -37,6 +37,8 @@
  * @subpackage Link
  * @author Michael Knoll
  */
+// silence warning about incomptible declaration
+@(function() {
 class  Tx_PtExtlist_ViewHelpers_Link_SortingFieldsViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Link\ActionViewHelper
 {
     /**
@@ -99,3 +101,4 @@ class  Tx_PtExtlist_ViewHelpers_Link_SortingFieldsViewHelper extends \TYPO3\CMS\
         return parent::render($action, $argumentArray, null, null, null, $pageUid, $pageType, $noCache, $noCacheHash, $section, $format, $linkAccessRestrictedPages, $additionalParams, $absolute, $addQueryString, $argumentsToBeExcludedFromQueryString, $addQueryStringMethod);
     }
 }
+})();
