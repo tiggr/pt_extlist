@@ -33,6 +33,8 @@
  * @package ViewHelpers
  * @subpackage Link
  */
+// silence warning about incomptible declaration
+@(function () {
 class  Tx_PtExtlist_ViewHelpers_Link_ActionViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Link\ActionViewHelper
 {
     /**
@@ -81,3 +83,4 @@ class  Tx_PtExtlist_ViewHelpers_Link_ActionViewHelper extends \TYPO3\CMS\Fluid\V
         return parent::render($action, $arguments, $controller, $extensionName, $pluginName, $pageUid, $pageType, $noCache, $noCacheHash, $section, $format, $linkAccessRestrictedPages, $additionalParams, $absolute, $addQueryString, $argumentsToBeExcludedFromQueryString);
     }
 }
+})();

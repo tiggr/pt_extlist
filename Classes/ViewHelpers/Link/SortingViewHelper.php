@@ -36,6 +36,8 @@
  * @subpackage Link
  * @author Michael Knoll
  */
+// silence warning about incomptible declaration
+@(function() {
 class  Tx_PtExtlist_ViewHelpers_Link_SortingViewHelper extends \TYPO3\CMS\Fluid\ViewHelpers\Link\ActionViewHelper
 {
     /**
@@ -134,3 +136,4 @@ class  Tx_PtExtlist_ViewHelpers_Link_SortingViewHelper extends \TYPO3\CMS\Fluid\
         return Tx_PtExtlist_Domain_QueryObject_Query::SORTINGSTATE_NONE;
     }
 }
+})();
