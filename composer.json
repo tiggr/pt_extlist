@@ -1,5 +1,5 @@
 {
-  "name": "punktde/pt-extlist",
+  "name": "davitec/pt-extlist",
   "type": "typo3-cms-extension",
   "description": "List generator for TYPO3 based on Extbase. See http://extlist.punkt.de for further details.",
   "keywords": [
@@ -27,6 +27,7 @@
   },
   "replace": {
     "pt_extlist": "self.version",
+    "punktde/pt-extlist": "self.version",
     "typo3-ter/pt-extlist": "self.version"
   },
   "extra": {
