@@ -25,6 +25,7 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+use PunktDe\PtExtbase\Configuration\AbstractConfigurationBuilder;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 
 /**
@@ -38,7 +39,7 @@ use TYPO3\CMS\Core\Utility\ArrayUtility;
  * @author Christoph Ehscheidt
  * @see Tx_PtExtlist_Tests_Domain_Configuration_ConfigurationBuilderTest
  */
-class Tx_PtExtlist_Domain_Configuration_ConfigurationBuilder extends Tx_PtExtbase_Configuration_AbstractConfigurationBuilder
+class Tx_PtExtlist_Domain_Configuration_ConfigurationBuilder extends AbstractConfigurationBuilder
 {
     /**
      * Holds settings to build configuration objects
