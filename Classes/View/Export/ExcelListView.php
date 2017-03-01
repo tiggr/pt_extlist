@@ -519,7 +519,8 @@ class Tx_PtExtlist_View_Export_ExcelListView extends Tx_PtExtlist_View_Export_Ab
      */
     protected function clearOutputBufferAndSendHeaders()
     {
-        ob_clean();
+        #ob_clean();
+        ob_end_clean();
         // redirect output to client browser
         header('Content-Type: application/'.$this->getContentTypeApplicationForBrowser());
 
